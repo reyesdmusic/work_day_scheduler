@@ -12,6 +12,10 @@
     padding: 10px;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 #one-row {
   margin-top: 20px;  
 }
@@ -82,4 +86,5 @@ input:focus {
     border: none;
   }
   
+
   

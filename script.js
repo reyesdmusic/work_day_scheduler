@@ -14,12 +14,12 @@ $(document).ready(function() {
       console.log("clicked");
       if (mode === "past") {
         mode = "future";
-        container.setAttribute("class", "future col-8");
-        otherContainer.setAttribute("class", "future col-8");
+        container.setAttribute("class", "future col-lg-8 col-md-6 col-sm-12 col-xs-12");
+        otherContainer.setAttribute("class", "future col-lg-8 col-md-6 col-sm-12 col-xs-12");
       } else {
         mode = "past";
-        container.setAttribute("class", "past col-8");
-        otherContainer.setAttribute("class", "past col-8");
+        container.setAttribute("class", "past col-lg-8 col-md-6 col-sm-12 col-xs-12");
+        otherContainer.setAttribute("class", "past col-lg-8 col-md-6 col-sm-12 col-xs-12");
       }
     });
 
