@@ -1,0 +1,85 @@
+
+
+#header {
+ text-align: center;
+ font-family: 'Patua One';
+ font-size: 100px;
+}
+
+#header-sub-text {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#one-row {
+  margin-top: 20px;  
+}
+
+#time-box {
+    background-color: rgb(216, 212, 212);
+    text-align: center;
+    padding: 20px;
+}
+
+#edit-box {
+    background-color: rgb(118, 226, 208);
+    text-align: center;
+    padding: 20px;
+}
+
+#cancel-box {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+#save-box {
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+#user-edit {
+   height: 100%;
+   width: 100%;
+   border: none;  
+}
+
+input:focus {
+    border: none;
+    outline: none;  
+  }
+
+
+ 
+
+
+  /* Dark Mode */
+.now {
+    width: 100% auto;
+    height: 100% auto;
+    background-color: rgb(5, 237, 253);
+    margin: 0;
+    border: none;
+  }
+  
+  
+  /* Light Mode */
+  .past {
+    width: 100% auto;
+    height: 100% auto;
+    background-color: rgb(199, 199, 199);
+    margin: 0;
+    border: none;
+  }
+
+  .future {
+    width: 100% auto;
+    height: 100% auto;
+    background-color: rgb(5, 237, 253);
+    margin: 0;
+    border: none;
+  }
+  
+  
