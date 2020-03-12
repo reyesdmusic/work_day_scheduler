@@ -21,33 +21,33 @@ h3 {
 }
 
 #time-box {
-    background-color: rgb(216, 212, 212);
+    background-color: rgb(245, 243, 243);
     text-align: center;
     padding: 20px;
 }
 
 #edit-box {
-    background-color: rgb(118, 226, 208);
+    background-color: rgb(255, 212, 21);
     text-align: center;
     padding: 20px;
 }
 
 #cancel-box {
-    background-color: red;
+    background-color: rgb(253, 75, 5);
     text-align: center;
     padding: 20px;
+}
+
+#clear-box {
+  background-color: rgb(137, 79, 231);
+  text-align: center;
+  padding: 20px;
 }
 
 #save-box {
-    background-color: green;
+    background-color: rgb(96, 201, 76);
     text-align: center;
     padding: 20px;
-}
-
-#user-edit {
-   height: 100%;
-   width: 100%;
-   border: none;  
 }
 
 input:focus {
@@ -63,7 +63,7 @@ input:focus {
 .now {
     width: 100% auto;
     height: 100% auto;
-    background-color: rgb(5, 237, 253);
+    background-color: rgb(253, 75, 5);
     margin: 0;
     border: none;
   }
@@ -71,20 +71,60 @@ input:focus {
   
   /* Light Mode */
   .past {
-    width: 100% auto;
+    width: 100%;
     height: 100% auto;
     background-color: rgb(199, 199, 199);
     margin: 0;
     border: none;
   }
 
+  .past-input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    border: none;
+    text-overflow: ellipsis;
+  }
+
   .future {
     width: 100% auto;
     height: 100% auto;
-    background-color: rgb(5, 237, 253);
+    background-color: rgb(96, 201, 76);
     margin: 0;
     border: none;
   }
-  
 
-  
+  @media all and (max-width: 991px) {
+    #text-box-9am {
+      height: 100px;
+    }
+    #user-edit-9am {
+      height: 100px;
+    }
+
+    #set-text-9am {
+      height: 100px;
+    }
+
+    #time-box {
+     padding: 0px;
+    }
+
+    #edit-box {
+      padding: 10px;
+    }
+
+    #cancel-box {
+      padding: 10px;
+    }
+
+    #save-box {
+      padding: 10px;
+    }
+
+    #clear-box {
+      padding: 10px;
+    }
+
+  }
