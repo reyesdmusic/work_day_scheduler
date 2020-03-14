@@ -88,7 +88,7 @@ h4 {
 #save-box-12pm, #save-box-1pm, #save-box-2pm,
 #save-box-3pm, #save-box-4pm, #save-box-5pm
 {
-    background-color: rgb(96, 201, 76);
+    background-color: rgb(60, 228, 102);
     text-align: center;
     padding: 20px;
     border: none;
@@ -110,11 +110,12 @@ button:hover {
 
   /* Now Mode */
 .now {
-    width: 100% auto;
+    width: 100%;
     height: 100% auto;
     background-color: rgb(253, 75, 5);
     margin: 0;
     border: none;
+  
   }
   
   .now-input {
@@ -124,7 +125,7 @@ button:hover {
     margin: 0;
     border: none;
     text-overflow: ellipsis;
-
+  
   }
   
   /* Past Mode */
@@ -150,7 +151,7 @@ button:hover {
   .future {
     width: 100% auto;
     height: 100% auto;
-    background-color: rgb(96, 201, 76);
+    background-color: rgb(60, 228, 102);
     margin: 0;
     border: none;
   }
@@ -158,7 +159,7 @@ button:hover {
   .future-input {
     width: 100%;
     height: 100%;
-    background-color: rgb(148, 230, 132);
+    background-color: rgb(153, 253, 132);
     margin: 0;
     border: none;
     text-overflow: ellipsis;

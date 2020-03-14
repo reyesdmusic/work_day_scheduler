@@ -141,7 +141,7 @@ $("#clear-all").on("click", function(){
       $("#user-edit-9am").attr("class", "past-input")
     }
     
-    if (m === 9) {
+    if (m == 9) {
       $("#text-box-9am").attr("class", "now col-lg-6 col-md-12")
       $("#set-text-9am").attr("class", "now col-lg-8 col-md-12")
       $("#user-edit-9am").attr("class", "now-input")
@@ -226,7 +226,7 @@ if (m > 10) {
   $("#user-edit-10am").attr("class", "past-input")
 }
 
-if (m === 10) {
+if (m == 10) {
   $("#text-box-10am").attr("class", "now col-lg-6 col-md-12")
   $("#set-text-10am").attr("class", "now col-lg-8 col-md-12")
   $("#user-edit-10am").attr("class", "now-input")
@@ -310,7 +310,7 @@ $("#set-text-11am").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-11am").attr("class", "past-input")
 }
 
-if (m === 11) {
+if (m == 11) {
 $("#text-box-11am").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-11am").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-11am").attr("class", "now-input")
@@ -394,7 +394,7 @@ $("#set-text-12pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-12pm").attr("class", "past-input")
 }
 
-if (m === 12) {
+if (m == 12) {
 $("#text-box-12pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-12pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-12pm").attr("class", "now-input")
@@ -478,7 +478,7 @@ $("#set-text-1pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-1pm").attr("class", "past-input")
 }
 
-if (m === 13) {
+if (m == 13) {
 $("#text-box-1pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-1pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-1pm").attr("class", "now-input")
@@ -563,7 +563,7 @@ $("#set-text-2pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-2pm").attr("class", "past-input")
 }
 
-if (m === 14) {
+if (m == 14) {
 $("#text-box-2pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-2pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-2pm").attr("class", "now-input")
@@ -649,7 +649,7 @@ $("#set-text-3pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-3pm").attr("class", "past-input")
 }
 
-if (m === 15) {
+if (m == 15) {
 $("#text-box-3pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-3pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-3pm").attr("class", "now-input")
@@ -734,7 +734,7 @@ $("#set-text-4pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-4pm").attr("class", "past-input")
 }
 
-if (m === 16) {
+if (m == 16) {
 $("#text-box-4pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-4pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-4pm").attr("class", "now-input")
@@ -816,7 +816,7 @@ $("#set-text-5pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-5pm").attr("class", "past-input")
 }
 
-if (m === 16) {
+if (m == 16) {
 $("#text-box-5pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-5pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-5pm").attr("class", "now-input")
