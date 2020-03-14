@@ -16,6 +16,11 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
+
 #one-row {
   margin-top: 20px;  
 }
@@ -26,25 +31,37 @@ h3 {
     padding: 20px;
 }
 
-#edit-box {
+#edit-box-9am, #edit-box-10am, #edit-box-11am, 
+#edit-box-12pm, #edit-box-1pm, #edit-box-2pm,
+#edit-box-3pm, #edit-box-4pm, #edit-box-5pm
+   {
     background-color: rgb(255, 212, 21);
     text-align: center;
     padding: 20px;
 }
 
-#cancel-box {
+#cancel-box-9am, #cancel-box-10am, #cancel-box-11am,
+#cancel-box-12pm, #cancel-box-1pm, #cancel-box-2pm,
+#cancel-box-3pm, #cancel-box-4pm, #cancel-box-5pm
+  {
     background-color: rgb(253, 75, 5);
     text-align: center;
     padding: 20px;
 }
 
-#clear-box {
+#clear-box-9am, #clear-box-10am, #clear-box-11am,
+#clear-box-12pm, #clear-box-1pm, #clear-box-2pm,
+#clear-box-3pm, #clear-box-4pm, #clear-box-5pm
+ {
   background-color: rgb(137, 79, 231);
   text-align: center;
   padding: 20px;
 }
 
-#save-box {
+#save-box-9am, #save-box-10am, #save-box-11am, 
+#save-box-12pm, #save-box-1pm, #save-box-2pm,
+#save-box-3pm, #save-box-4pm, #save-box-5pm
+{
     background-color: rgb(96, 201, 76);
     text-align: center;
     padding: 20px;
@@ -59,7 +76,7 @@ input:focus {
  
 
 
-  /* Dark Mode */
+  /* Now Mode */
 .now {
     width: 100% auto;
     height: 100% auto;
@@ -68,8 +85,17 @@ input:focus {
     border: none;
   }
   
+  .now-input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 128, 78);
+    margin: 0;
+    border: none;
+    text-overflow: ellipsis;
+
+  }
   
-  /* Light Mode */
+  /* Past Mode */
   .past {
     width: 100%;
     height: 100% auto;
@@ -87,6 +113,8 @@ input:focus {
     text-overflow: ellipsis;
   }
 
+  /* Now Mode */
+
   .future {
     width: 100% auto;
     height: 100% auto;
@@ -95,35 +123,43 @@ input:focus {
     border: none;
   }
 
-  @media all and (max-width: 991px) {
-    #text-box-9am {
-      height: 100px;
-    }
-    #user-edit-9am {
-      height: 100px;
-    }
+  .future-input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(148, 230, 132);
+    margin: 0;
+    border: none;
+    text-overflow: ellipsis;
+  }
 
-    #set-text-9am {
+  @media all and (max-width: 991px) {
+    #text-box-9am, #user-edit-9am,  #set-text-9am, 
+    #text-box-10am, #user-edit-10am,  #set-text-10am, 
+    #text-box-11am, #user-edit-11am,  #set-text-11am,
+    #text-box-12pm, #user-edit-12pm,  #set-text-12pm,
+    #text-box-1pm, #user-edit-1pm,  #set-text-1pm,
+    #text-box-2pm, #user-edit-2pm,  #set-text-2pm,
+    #text-box-3pm, #user-edit-3pm,  #set-text-3pm,
+    #text-box-4pm, #user-edit-4pm,  #set-text-4pm,
+    #text-box-5pm, #user-edit-5pm,  #set-text-5pm 
+    {
       height: 100px;
     }
+     
 
     #time-box {
      padding: 0px;
     }
 
-    #edit-box {
-      padding: 10px;
-    }
-
-    #cancel-box {
-      padding: 10px;
-    }
-
-    #save-box {
-      padding: 10px;
-    }
-
-    #clear-box {
+    #edit-box-9am,  #cancel-box-9am, #save-box-9am,  #clear-box-9am,
+    #edit-box-10am,  #cancel-box-10am, #save-box-10am,  #clear-box-10am, 
+    #edit-box-11am,  #cancel-box-11am, #save-box-11am,  #clear-box-11am,
+    #edit-box-12pm,  #cancel-box-12pm, #save-box-12pm,  #clear-box-12pm,
+    #edit-box-1pm,  #cancel-box-1pm, #save-box-1pm,  #clear-box-1pm,
+    #edit-box-2pm,  #cancel-box-2pm, #save-box-2pm,  #clear-box-2pm,
+    #edit-box-3pm,  #cancel-box-3pm, #save-box-3pm,  #clear-box-3pm,
+    #edit-box-4pm,  #cancel-box-4pm, #save-box-4pm,  #clear-box-4pm,
+    #edit-box-5pm,  #cancel-box-5pm, #save-box-5pm,  #clear-box-5pm {
       padding: 10px;
     }
 
