@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+  /*This renders all the user input notes into the corresponding rows*/
+
   render9am();
   render10am();
   render11am();
@@ -11,9 +13,11 @@ $(document).ready(function() {
   render4pm();
   render5pm();
 
+  /*This grabs the hour in military time and sets it to the variable "m"*/
+
     let m = moment().format("HH");
   
-    
+  /*Here all the appropriate divs are shown and hidden*/
 
     $("#save-box-9am").hide();
     $("#cancel-box-9am").hide();
@@ -78,9 +82,29 @@ $(document).ready(function() {
     $("#clear-box-5pm").hide();
     $("#set-text-5pm").show();
 
+  /*This clears all the user input notes*/
 
-//////////////////////////////////
+$("#clear-all").on("click", function(){
 
+  localStorage.clear('storedUserEdit9am');
+  localStorage.clear('storedUserEdit10am');
+  localStorage.clear('storedUserEdit11am');
+  localStorage.clear('storedUserEdit12pm');
+  localStorage.clear('storedUserEdit1pm');
+  localStorage.clear('storedUserEdit2pm');
+  localStorage.clear('storedUserEdit3pm');
+  localStorage.clear('storedUserEdit4pm');
+  localStorage.clear('storedUserEdit5pm');
+
+  location.reload();
+})
+
+
+ //////*The following code corresponds to the "9 AM" row. Simmilar code is repeated below corresponding to the other rows by hour*////
+
+
+ //*The edit button*//
+    
     $("#edit-box-9am").on("click", function(){
         $("#edit-box-9am").hide();
         $("#cancel-box-9am").show();
@@ -90,6 +114,8 @@ $(document).ready(function() {
         $("#user-edit-9am").show();
         $("#clear-box-9am").show();
     })
+  
+  //*The cancel button*//
 
     $("#cancel-box-9am").on("click", function(){
         $("#edit-box-9am").show();
@@ -100,10 +126,14 @@ $(document).ready(function() {
         $("#set-text-9am").show();
         $("#clear-box-9am").hide();
     })
+  
+     //*The clear button*//
 
     $("#clear-box-9am").on("click", function(){
         $("#user-edit-9am").val("").empty();
     })
+
+    //*This changes the color of the row to reflect whether the hour is current, in the past, or in the future*//
 
     if (m > 9) {
       $("#text-box-9am").attr("class", "past col-lg-8 col-md-12")
@@ -124,6 +154,7 @@ $(document).ready(function() {
       $("#user-edit-9am").attr("class", "future-input")
     }
 
+//*The code saves user input in to local storage and then renders it into the row*//
 
 var storedUserEdit9am = [];
 
@@ -150,13 +181,13 @@ render9am();
 
 });
 
+//*This is the code that renders the info from local storage onto the row. It is called when the page is loaded and when the user hits the save button*//
+
 function render9am() {
  
   var new9amText= JSON.parse(localStorage.getItem("storedUserEdit9am"));
 
   if (new9amText !== null) {
- 
-
 
   $("#set-text-9am").text(new9amText[0]);
 
