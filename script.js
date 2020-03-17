@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-  /*This renders all the user input notes into the corresponding rows*/
+  /*Render all the user input notes into the corresponding rows*/
 
   render9am();
   render10am();
@@ -13,7 +13,7 @@ $(document).ready(function() {
   render4pm();
   render5pm();
 
-  /*This grabs the hour in military time and sets it to the variable "m"*/
+  /*Grab the hour in military time and set it to the variable "m"*/
 
     let m = moment().format("HH");
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     $("#header-sub-text").append(day + ", " + date);
   
-  /*Here all the appropriate divs are shown and hidden*/
+  /*Show and hide appropriate divs*/
 
     $("#save-box-9am").hide();
     $("#cancel-box-9am").hide();
@@ -87,7 +87,7 @@ $(document).ready(function() {
     $("#clear-box-5pm").hide();
     $("#set-text-5pm").show();
 
-  /*This clears all the user input notes*/
+  /*Clear all the user input notes*/
 
 $("#clear-all").on("click", function(){
 
