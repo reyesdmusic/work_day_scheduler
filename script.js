@@ -16,6 +16,11 @@ $(document).ready(function() {
   /*This grabs the hour in military time and sets it to the variable "m"*/
 
     let m = moment().format("HH");
+
+    let day = moment().format("dddd");
+    let date = moment().format("LL");
+
+    $("#header-sub-text").append(day + ", " + date);
   
   /*Here all the appropriate divs are shown and hidden*/
 
@@ -810,20 +815,20 @@ $("#clear-box-5pm").on("click", function(){
   $("#user-edit-5pm").val("").empty();
 })
 
-if (m > 16) {
+if (m > 17) {
 $("#text-box-5pm").attr("class", "past col-lg-6 col-md-12")
 $("#set-text-5pm").attr("class", "past col-lg-8 col-md-12")
 $("#user-edit-5pm").attr("class", "past-input")
 }
 
-if (m == 16) {
+if (m == 17) {
 $("#text-box-5pm").attr("class", "now col-lg-6 col-md-12")
 $("#set-text-5pm").attr("class", "now col-lg-8 col-md-12")
 $("#user-edit-5pm").attr("class", "now-input")
 }
 
 
-if (m < 16) {
+if (m < 17) {
 $("#text-box-5pm").attr("class", "future col-lg-6 col-md-12")
 $("#set-text-5pm").attr("class", "future col-lg-8 col-md-12")
 $("#user-edit-5pm").attr("class", "future-input")
